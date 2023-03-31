@@ -1,0 +1,28 @@
+img{
+    min-width: 80%;
+    height: auto;
+    /* width:  60%;
+    height: 60%; */
+    /* object-fit: cover; */
+}
+#headtext{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    color: rgba(29, 198, 147, 0.93);
+    font-size: 30px;
+    text-decoration: underline;
+}
+p{
+    text-align: center;
+}
+footer{
+    margin-top:30px;
+    color: rgba(29, 198, 147, 0.93);
+    font-size: 15px;
+}
+p:hover{
+    cursor: pointer;
+}
+
