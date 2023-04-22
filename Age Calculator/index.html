@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator app</title>
+    <link rel="icon" href="./assets/images/favicon-32x32.png">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- centered div/section -->
+    <section class="center">
+        <!-- <form name="calcForm" onsubmit="return calculateAge()"> -->
+        <form name="calcForm">
+            <div class="d-input date">
+                <div class="m-input ">
+                    <p class="text" id="err_text">DAY</p>
+                    <input type="text" placeholder="DD" id="day" class="field">
+                    <p class="errors"></p>
+                </div>
+                <div class="m-input">
+                    <p class="text" id="err_text">MONTH</p>
+                    <input type="text" placeholder="MM" id="month">
+                    <p class="errors"></p>
+                </div>
+                <div class="m-input">
+                    <p class="text" id="err_text">YEAR</p>
+                    <input type="text" placeholder="YYYY" id="year">
+                    <p class="errors"></p>
+                </div>
+
+            </div>
+
+            <div class="date">
+                <hr>
+                <button type="button" id="btn" onclick="calculateAge()">
+                    <img src="assets/images/icon-arrow.svg" class="arrow" />
+                </button>
+            </div>
+        </form>
+        <!-- display answer -->
+        <div class="ans">
+            <p class="answer" id="years"> <span style="color:hsl(259, 100%, 65%)" id="y"> - - </span> years</p>
+            <p class="answer"> <span style="color:hsl(259, 100%, 65%)" id="months"> - - </span> months</p>
+            <p class="answer"> <span style="color:hsl(259, 100%, 65%)" id="days"> - - </span> days</p>
+        </div>
+
+    </section>
+
+    <!-- Javascript linking -->
+    <script src="script.js"></script>
+</body>
+
+</html>
