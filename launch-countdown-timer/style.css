@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800;1,900&family=Red+Hat+Text&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin:0px;
+}
+.stars{
+ background: url(./images/bg-stars.svg),linear-gradient(180deg, hsl(234, 17%, 12%), hsl(303, 36%, 10%));
+ position: absolute;
+ height: 100%;
+ width: 100%;
+}
+.stars-body{
+position: absolute;
+top: 35%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-family: 'Red Hat Text', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+text-transform: uppercase;
+font-weight: 700; 
+}
+.text{
+color: hsl(0, 0%, 100%);
+font-size: 14px;
+letter-spacing: 5px;
+text-align: center;
+margin-bottom: 50px;
+}
+.time-text{
+    color: hsl(237, 18%, 59%);
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+.grp-text{
+display: flex;
+flex-direction: row;
+ justify-content: space-between;
+}
+.grp-text img{
+    width:60%;
+    height:60%;
+}
+.hills{
+ background: url(./images/pattern-hills.svg) no-repeat;
+ position: absolute;
+ top: 70%;
+ height: 30%;
+ width: 100%;
+ display: flex;
+align-items: center;
+}
+.grp-icons{
+    /* position: relative;
+    left: 50%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.grp-icons img{
+ padding-right: 30px;
+ width:27%;
+ height: 27%;
+}
+.grp-icons img:hover{
+    /* background-color: hsl(345, 95%, 68%) ; */
+fill: hsl(345, 95%, 68%) ;
+ color:hsl(345, 95%, 68%);
+ cursor: pointer;
+}
+.test:hover{
+    background-image: url(./images/icon-facebook-pink.svg);
+    cursor: pointer;
+}
+.attribution 
+ { font-size: 11px; 
+  text-align: center; 
+}
+.attribution a 
+{ color: hsl(228, 45%, 44%); 
+}

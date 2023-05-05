@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Todo App</title>
+</head>
+
+<body class="light-theme">
+    <!-- section to hold image, text 'TODO', input element and icon for toggle between day and night -->
+    <section>
+        <!-- <img src="./images/bg-desktop-light.jpg" class="desktop" /> -->
+        <!-- <span class="desktop"></span> -->
+        <div class="img-element">
+            <div class="todo-display">
+                <p class="todo-text">TODO</p>
+                <div class="toggle-grp">
+                    <input type="checkbox" id="toggle" class="toggle" name="toggle">
+                    <label for="toggle"></label>
+                </div>
+            </div>
+            <div class="todo-display-input">
+                <span class="ticked"></span>
+                <input type="text" placeholder="Create a new todo.." class="text" id="input-text">
+            </div>
+        </div>
+    </section>
+    <!-- to do items display -->
+    <section class="todo-list">
+        <div class="display">
+            <!-- <div class="todo-display-input-li">
+                <span class="label">
+                    <input type="checkbox" checked>
+                    <span class="ticked"></span>
+                    <span class="text">Text</span>
+                </span>
+                <span class="cancel"></span>
+            </div> -->
+            <!-- <div class="todo-display-input-li">
+                <span class="label">
+                    <input type="checkbox">
+                    <span class="ticked"></span>
+                    <span class="text">Text</span>
+                </span>
+                <span class="cancel"></span>
+            </div>-->
+        </div>
+        <div class="toggle-options">
+            <p class="item-remain"><span>0</span> items left</p>
+            <div class="activity">
+                <a href="#">All</a>
+                <a href="#">Active</a>
+                <a href="#">Completed</a>
+            </div>
+            <p class="class">Clear Completed</p>
+        </div>
+
+    </section>
+
+
+    <!-- <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Coded by
+        <a href="https://github.com/RhodAyo">RhodAyo</a>.
+    </footer> -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

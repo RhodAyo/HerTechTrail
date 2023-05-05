@@ -60,4 +60,15 @@ function calculateAge() {
 
   var userDay = document.getElementById("days");
   userDay.innerHTML = days;
+
+  if (inputs[2].value > dateNow.getUTCFullYear()) {
+    inputs[2].classList.add("invalid");
+    text[2].classList.add("invalid");
+    error[2].innerHTML = `input a year less or equals to ${dateNow.getUTCFullYear()}`;
+    userYear.innerHTML = "--";
+  } else {
+    inputs[2].classList.remove("invalid");
+    text[2].classList.remove("invalid");
+    error[2].innerHTML = "";
+  }
 }
