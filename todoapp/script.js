@@ -3,6 +3,13 @@ var inputs = document.getElementById("input-text");
 var itemundone = document.querySelector(".item-remain span");
 var userinput = document.querySelector(".todo-display-input span");
 var list = document.querySelector(".todo-list .display");
+var display = document.querySelector(".display");
+var filtertodo = document.querySelector(".filter");
+var all = document.getElementById("all");
+var active = document.getElementById("active");
+
+all.addEventListener("click", filterTodos);
+active.addEventListener("click", filterTodos);
 
 toggle.onchange = (e) => {
   if (toggle.checked === true) {
@@ -17,6 +24,7 @@ toggle.onchange = (e) => {
 userinput.addEventListener("click", () => {
   if (inputs.value.length > 0) {
     newToDo(inputs.value);
+    todoLocalstorage(inputs.value);
     inputs.value = "";
   }
 });
@@ -24,6 +32,7 @@ userinput.addEventListener("click", () => {
 inputs.addEventListener("keypress", (i) => {
   if (i.charCode === 13 && inputs.value.length > 0) {
     newToDo(inputs.value);
+    todoLocalstorage(inputs.value);
     inputs.value = "";
   }
 });
@@ -56,3 +65,32 @@ list.addEventListener("click", (event) => {
     removeTodo(event.target.parentElement);
   }
 });
+
+function filterTodos(e) {
+  const todos = display.childNodes;
+  todos.forEach(function (element) {
+    switch (e.target.value) {
+      case "all":
+        element.style.display = "flex";
+        break;
+      case "active":
+        if (element.classList.contains("ticked")) {
+          element.style.display = "flex";
+        } else {
+          element.style.display = "none";
+        }
+        break;
+    }
+  });
+}
+
+function todoLocalstorage(todos) {
+  let todo;
+  if (localStorage.getItem("todos") === null) {
+    todo = [];
+  } else {
+    todo = JSON.parse(localStorage.getItem("todos"));
+  }
+  todo.push(todos);
+  localStorage.setItem("todos", JSON.stringify(todo));
+}
