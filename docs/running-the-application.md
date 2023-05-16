@@ -14,6 +14,4 @@ The docker consists
 
 ## BACK END
 
-```Angular
-
-```
+#### The backend project runs by running the webapi
