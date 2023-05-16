@@ -14,9 +14,8 @@ The docker consists
 
 ## BACK END
 
-<<<<<<< HEAD
 #### The backend project runs by running the webapi
-=======
+
 ````
 // Some code```html
 <app-job-employee-view
@@ -42,5 +41,5 @@ The docker consists
 ````
 
 ```Angular
+
 ```
->>>>>>> 238645bb4833f7d18f26e371dbfc121e4a6bd0d1
