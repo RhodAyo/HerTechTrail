@@ -16,7 +16,7 @@ body{
 }
 .stars-body{
 position: absolute;
-top: 35%;
+top: 45%;
 left: 50%;
 transform: translate(-50%, -50%);
 font-family: 'Red Hat Text', sans-serif;
@@ -27,60 +27,68 @@ font-weight: 700;
 }
 .text{
 color: hsl(0, 0%, 100%);
-font-size: 14px;
-letter-spacing: 5px;
+font-size: 23px;
+letter-spacing: 6px;
 text-align: center;
-margin-bottom: 50px;
 }
 .time-text{
     color: hsl(237, 18%, 59%);
-    font-size: 10px;
-    letter-spacing: 3px;
+    font-size: 20px;
+    letter-spacing: 4px;
 }
 .grp-text{
 display: flex;
 flex-direction: row;
- justify-content: space-between;
+align-items: center;
 }
-.grp-text img{
-    width:60%;
-    height:60%;
+.grp-content{
+   display: flex;
+flex-direction: column;
+align-items: center;
+margin-right: 70px;
 }
 .hills{
  background: url(./images/pattern-hills.svg) no-repeat;
  position: absolute;
- top: 70%;
+ top: 75%;
  height: 30%;
  width: 100%;
  display: flex;
 align-items: center;
 }
 .grp-icons{
-    /* position: relative;
-    left: 50%; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 .grp-icons img{
  padding-right: 30px;
- width:27%;
- height: 27%;
+ width:30%;
+ height: 30%;
 }
 .grp-icons img:hover{
-    /* background-color: hsl(345, 95%, 68%) ; */
-fill: hsl(345, 95%, 68%) ;
+ fill: hsl(345, 95%, 68%) ;
  color:hsl(345, 95%, 68%);
  cursor: pointer;
+}
+.number{
+    color: hsl(345, 95%, 68%);
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    padding: 50px;
+    background-color: hsl(236, 21%, 26%);
+    margin-bottom: -20px;
+    box-shadow: 5px 10px 3px 0px rgba(21, 21, 21, 0.2);
 }
 .test:hover{
     background-image: url(./images/icon-facebook-pink.svg);
     cursor: pointer;
 }
 .attribution 
- { font-size: 11px; 
+ { 
+  font-size: 11px; 
   text-align: center; 
 }
 .attribution a 

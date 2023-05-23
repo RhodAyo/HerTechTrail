@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800;1,900&family=Red+Hat+Text&family=Space+Grotesk:wght@300;500;600&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Red Hat Text', sans-serif;
+font-family: 'Space Grotesk', sans-serif; */
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin:0px;
+     background: url(./images/bg-main-desktop.png) no-repeat;
+    height: 100%;
+    width: 40%;
+    font-family: 'Space Grotesk', sans-serif; 
+}
+.card-one{
+    background: url(./images/bg-card-front.png) no-repeat;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    height: 30%;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+    
+}
+.card-one .card-logo{
+    position: relative;
+    top:10%;
+    right: -5%;
+    height: 20%;
+    width: 20%;
+}
+.card-one .card-no{
+    position: relative;
+    top:15%;
+    right: -5%;
+    font-size: 23px;
+    letter-spacing: 5px;
+}
+.card-one .card-name{
+    position: relative;
+    top:12%;
+   right: -5%;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.card-one .card-expire{
+    position: relative;
+    top:-8%;
+    left: 80%;
+}
+.card-two{
+    background: url(./images/bg-card-back.png) no-repeat;
+    position: absolute;
+    top:50%;
+    left: 20%;
+    height: 35%;
+    width: 35%;
+    border-radius: 10px;
+    font-family: 'Space Grotesk', sans-serif; 
+}
+.card-two .card-ccv{
+    position: relative;
+    top:45%;
+    left:80%;
+    color: white;
+    font-size: 18px;
+}
+.user-details{
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-family: 'Space Grotesk', sans-serif; 
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    width:25%;
+    display: block;
+}
+.user-details label{
+    padding-bottom: 5px;
+}
+.card-details{
+    display: flex;
+    flex-direction: column;
+}
+ input[type="text"]{
+    padding: 10px;
+    border: 1px solid hsl(270, 3%, 87%);
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+#exp, #expyear{
+    width: 35%;
+    margin-right: 10px;
+}
+#cvc{
+    width: 50%;
+}
+.details label{
+    margin-right: 20%;
+}
+.cvc{
+    margin-left: 20%;
+} 
+.btn-confirm{
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    padding:10px;
+    outline: none;
+    border-radius:6px;
+    width:100%;
+    cursor: pointer;   
+}
+.complete-thanks{
+    font-size: 22px;
+}
+.complete-info{
+    color:  hsl(279, 6%, 55%);
+    font-weight: 500;
+}
+.complete-thanks .complete-info{
+    text-align: center;
+}
+
+.btn-confirm:hover{
+    color:hsl(278, 68%, 11%);
+    background-color:  white;
+}
+.completed{
+   position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    width:25%;
+    display: none;
+     text-align: center;
+}
+.complete{
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    width:25%;
+    display: block;
+     text-align: center;
+}
+/* .text:invalid + .errors {
+  display: none;
+} */
+.errors{
+    color: red;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+input.invalid {
+  border: 1px solid rgb(235, 17, 17);
+}
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 700px) {
+body{
+    overflow-x: hidden;
+    background: url(./images/bg-main-mobile.png) repeat-x;
+    height: 30%;
+    width: 100%;
+}
+    .card-two{
+    position: absolute;
+    top:2%;
+    left: 35%;
+    height: 30%;
+    width: 60%;
+}
+.card-one{
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    height: 30%;
+    width: 70%;
+    z-index: 1;
+    
+}
+.user-details{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:60%;
+}
+.completed{
+   position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    width:55%;
+     text-align: center;
+}
+}
