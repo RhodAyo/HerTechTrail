@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "number": "01",
+        "title": "Analytics and Feedback",
+        "description": "Create events and sell tickets with our seamless and secure checkout feature for attendees in your event.",
+        "image": "/images/event ticketing image.png"
+    },
+    {
+        "id": 1,
+        "number": "02",
+        "title": "Analytics and Feedback",
+        "description": "Use real-time analytics and reports to learn more about your buyers and what your attendees are saying about your event.",
+        "image": "/images/Analytics and feedback image.png"
+    },
+    {
+        "id": 2,
+        "number": "03",
+        "title": "Marketing and promotion",
+        "description": "Boost event visibility and ticket sales when you market and promote your event with our tools and partners.",
+        "image": "/images/Marketing and promotion image.png"
+    }
+]

@@ -1,0 +1,22 @@
+  .menu-button {
+    display: none; /* Hide the button on desktop */
+  }
+
+  .list-items {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #000000;
+  }
+  
+  @media (max-width: 767px) {
+    /* Display the menu button on mobile */
+    .menu-button {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .menu-button {
+        display:contents;
+    }
+  }
