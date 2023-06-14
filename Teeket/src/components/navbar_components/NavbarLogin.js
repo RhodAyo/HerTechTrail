@@ -42,7 +42,7 @@ function NavbarLogin() {
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/discover-events">Discover Events</Nav.Link>
-                <Nav.Link href="/book-events">Book Events</Nav.Link>
+                <Nav.Link href="/trending-events">Book Events</Nav.Link>
                 <Nav.Link href="/landing">Landing Page</Nav.Link>
                 <Nav.Link href="/login">Login</Nav.Link>
               </Nav>
